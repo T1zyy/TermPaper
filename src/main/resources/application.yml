@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: linktalk
+  datasource:
+    url: jdbc:postgresql://localhost:5432/linktalk
+    username: linktalk
+    password: linktalk
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 8080
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+
+linktalk:
+  recommendations:
+    view-cooldown-hours: 0

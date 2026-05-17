@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: linktalk-postgres
+    environment:
+      POSTGRES_DB: linktalk
+      POSTGRES_USER: linktalk
+      POSTGRES_PASSWORD: linktalk
+    ports:
+      - "5432:5432"
+    volumes:
+      - linktalk_pg:/var/lib/postgresql/data
+
+volumes:
+  linktalk_pg:

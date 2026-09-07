@@ -161,9 +161,6 @@ export default function RequestsPanel({ syncTick, onChanged }: RequestsPanelProp
                     </Button>
                   </>
                 )}
-                <Button variant="light" disabled>
-                  {t("openChat")}
-                </Button>
                 {direction === "incoming" && (
                   <Button
                     variant="outline"
